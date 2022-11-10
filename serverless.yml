@@ -1,0 +1,26 @@
+org: aguscbi
+app: fastapi
+service: fastapi
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  memorySize: 512 # optional, in MB, default is 1024
+  timeout: 10 # optional, in seconds, default is 6
+  versionFunctions: false # optional, default is true
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-2'}
+
+functions:
+  api:
+    handler: api/main.handler
+    url: true
+
+plugins:
+  - serverless-python-requirements
+
+package:
+  exclude:
+    - venv/**
+    - node_modules/**
