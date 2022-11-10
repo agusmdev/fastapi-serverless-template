@@ -1,0 +1,9 @@
+{
+    "name": "fastapi-serverless-template",
+    "version": "1.0.0",
+    "description": "Quick start for FastAPI service with traditional Serverless Framework",
+    "author": "@agusmdev",
+    "devDependencies": {
+      "serverless-python-requirements": "^5.1.0"
+    }
+  }

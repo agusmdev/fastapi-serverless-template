@@ -1,6 +1,4 @@
-org: aguscbi
-app: fastapi
-service: fastapi
+service: fastapi-serverless-template
 frameworkVersion: '3'
 
 provider:

@@ -1,0 +1,6 @@
+name: fastapi-serverless-template
+org: agusmdev
+description: Deploys a Python quick start FastAPI service with traditional Serverless Framework
+keywords: aws, serverless, faas, lambda, python, fastapi
+repo: https://github.com/agusmdev/fastapi-serverless-template
+license: MIT
